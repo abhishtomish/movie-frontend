@@ -19,7 +19,7 @@ class App extends Component {
   componentDidMount() {
 
     if(this.state.token) {
-      fetch('http://127.0.0.1:8000/api/movies/', {
+      fetch('http://13.233.161.192:8000/api/movies/', {
       method: 'GET',
       headers: {
         'Authorization': `Token ${this.state.token}`
